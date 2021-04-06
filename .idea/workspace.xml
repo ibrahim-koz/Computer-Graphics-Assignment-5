@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2b53bd51-5697-49f5-ab9c-a44468f723b9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="GLSL Shader" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1k9j64QCV2Vf2fsdc3rPe7M8t9V" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="ts.external.directory.path" value="C:\Users\ibrah\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\202.7660.23\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ibrah\Workspace\koz-gameengine\sandbox" />
+      <recent name="C:\Users\ibrah\Workspace\koz-gameengine\shaders" />
+      <recent name="C:\Users\ibrah\Workspace\koz-gameengine\src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ibrah\Workspace\koz-gameengine\object_files" />
+      <recent name="C:\Users\ibrah\Workspace\koz-gameengine\texture_files" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/koz-gameengine/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/sandbox/app.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="init.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="init.js" working-dir="$PROJECT_DIR$">
+      <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSStartBrowserRunConfigurationExtension">
+        <browser name="b2a9dca7-9d0b-4e1e-98a8-afb19c1328d2" />
+      </EXTENSION>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="Node.js.app.js" />
+      <item itemvalue="Node.js.init.js" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="Node.js.init.js" />
+        <item itemvalue="Node.js.app.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2b53bd51-5697-49f5-ab9c-a44468f723b9" name="Default Changelist" comment="" />
+      <created>1605119522820</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605119522820</updated>
+      <workItem from="1605119523855" duration="2933000" />
+      <workItem from="1605122507304" duration="4785000" />
+      <workItem from="1605130900222" duration="3063000" />
+      <workItem from="1605350808694" duration="20686000" />
+      <workItem from="1605383917202" duration="10254000" />
+      <workItem from="1605396136492" duration="2058000" />
+      <workItem from="1605399307324" duration="341000" />
+      <workItem from="1605449353340" duration="21953000" />
+      <workItem from="1605535079741" duration="21666000" />
+      <workItem from="1605570438832" duration="2990000" />
+      <workItem from="1605598006373" duration="6123000" />
+      <workItem from="1605606712303" duration="18000" />
+      <workItem from="1605618405316" duration="164000" />
+      <workItem from="1605632619074" duration="2657000" />
+      <workItem from="1605643345748" duration="2325000" />
+      <workItem from="1605812435292" duration="2234000" />
+      <workItem from="1605972642577" duration="593000" />
+      <workItem from="1606065018926" duration="615000" />
+      <workItem from="1606068575074" duration="7633000" />
+      <workItem from="1606090589609" duration="209000" />
+      <workItem from="1606090877236" duration="62000" />
+      <workItem from="1606091085099" duration="602000" />
+      <workItem from="1606168276370" duration="4696000" />
+      <workItem from="1606179205779" duration="145000" />
+      <workItem from="1606221438658" duration="478000" />
+      <workItem from="1606229080755" duration="10436000" />
+      <workItem from="1606425065789" duration="981000" />
+      <workItem from="1606483578958" duration="5196000" />
+      <workItem from="1606489061908" duration="862000" />
+      <workItem from="1606490059775" duration="1015000" />
+      <workItem from="1606506596695" duration="7445000" />
+      <workItem from="1606515853551" duration="1000" />
+      <workItem from="1606516684865" duration="1497000" />
+      <workItem from="1606519386466" duration="1195000" />
+      <workItem from="1606577981306" duration="9283000" />
+      <workItem from="1606591793130" duration="514000" />
+      <workItem from="1606769826817" duration="31000" />
+      <workItem from="1607020113166" duration="1194000" />
+      <workItem from="1607796763304" duration="2111000" />
+      <workItem from="1607798947161" duration="9810000" />
+      <workItem from="1607859675993" duration="12849000" />
+      <workItem from="1607878990496" duration="7842000" />
+      <workItem from="1607890980986" duration="4249000" />
+      <workItem from="1607897663003" duration="5725000" />
+      <workItem from="1607947228801" duration="3460000" />
+      <workItem from="1607967989824" duration="11524000" />
+      <workItem from="1607980759111" duration="1556000" />
+      <workItem from="1608155525614" duration="2831000" />
+      <workItem from="1608214627566" duration="38000" />
+      <workItem from="1608214725849" duration="2184000" />
+      <workItem from="1608320695807" duration="309000" />
+      <workItem from="1608589713768" duration="1514000" />
+      <workItem from="1608591560089" duration="50000" />
+      <workItem from="1608623462703" duration="913000" />
+      <workItem from="1608626776312" duration="16000" />
+      <workItem from="1608654251349" duration="65000" />
+      <workItem from="1608654328442" duration="49000" />
+      <workItem from="1608654393788" duration="177000" />
+      <workItem from="1608655566589" duration="16918000" />
+      <workItem from="1608740488816" duration="18511000" />
+      <workItem from="1608830452071" duration="25193000" />
+      <workItem from="1608920589022" duration="16676000" />
+      <workItem from="1608988272600" duration="2285000" />
+      <workItem from="1608994019147" duration="5261000" />
+      <workItem from="1609008801286" duration="3480000" />
+      <workItem from="1609016824836" duration="4181000" />
+      <workItem from="1609021159651" duration="465000" />
+      <workItem from="1609026200906" duration="524000" />
+      <workItem from="1609026748139" duration="1014000" />
+      <workItem from="1609077178246" duration="15000" />
+      <workItem from="1609077205254" duration="11293000" />
+      <workItem from="1609089846872" duration="51000" />
+      <workItem from="1609092365586" duration="616000" />
+      <workItem from="1609093171703" duration="363000" />
+      <workItem from="1609183240499" duration="10000" />
+      <workItem from="1609183263377" duration="57000" />
+      <workItem from="1609361448398" duration="59000" />
+      <workItem from="1609361517377" duration="199000" />
+      <workItem from="1609366946781" duration="136000" />
+      <workItem from="1609371961132" duration="5000" />
+      <workItem from="1609372185233" duration="364000" />
+      <workItem from="1609594726773" duration="3032000" />
+      <workItem from="1609600080163" duration="1356000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/sandbox/functions.js</url>
+          <line>48</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/sandbox/objects.js</url>
+          <line>34</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/sandbox/objects.js</url>
+          <line>28</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/sandbox/objects.js</url>
+          <line>30</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/sandbox/app.js</url>
+          <line>16</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/sandbox/objects.js</url>
+          <line>13</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/sandbox/app.js</url>
+          <line>32</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

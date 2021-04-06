@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="x-shader/x-vertex" id="vertex-shader-0">
+        attribute vec3 aVertexPosition;
+        attribute vec3 aVertexNormal;
+        attribute vec2 aTextureCoord;
+
+        uniform mat4 uNormalMatrix;
+        uniform mat4 uMVPMatrix;
+
+        uniform mat4 uModelMatrix;
+        uniform vec3 uLightWorldPosition;
+        uniform vec3 uCameraWorldPosition;
+        uniform float uShininess;
+        uniform vec3 uLightDirection;
+        uniform float uInnerLimit;
+        uniform float uOuterLimit;
+        uniform sampler2D uSampler;
+
+        varying vec2 vTextureCoord;
+        varying vec3 vNormal;
+        varying vec3 vSurfaceToLight;
+        varying vec3 vSurfaceToView;
+        void main(){
+            gl_Position = uMVPMatrix * vec4(aVertexPosition, 1.0);
+            vTextureCoord = aTextureCoord;
+            vNormal = mat3(uNormalMatrix) * aVertexNormal;
+            vec3 surfaceWorldPosition = (uModelMatrix * vec4(aVertexPosition, 1.0)).xyz;
+            vSurfaceToLight = uLightWorldPosition - surfaceWorldPosition;
+            vSurfaceToView = uCameraWorldPosition - surfaceWorldPosition;
+        }
+    </script>
+    <script type="x-shader/x-fragment" id="fragment-shader-0">
+        precision highp float;
+        uniform mat4 uNormalMatrix;
+        uniform mat4 uMVPMatrix;
+
+        uniform mat4 uModelMatrix;
+        uniform vec3 uLightWorldPosition;
+        uniform vec3 uCameraWorldPosition;
+        uniform float uShininess;
+        uniform vec3 uLightDirection;
+        uniform float uInnerLimit;
+        uniform float uOuterLimit;
+        uniform sampler2D uSampler;
+
+        varying vec2 vTextureCoord;
+        varying vec3 vNormal;
+        varying vec3 vSurfaceToLight;
+        varying vec3 vSurfaceToView;
+        void main(){
+            highp vec4 texelColor = texture2D(uSampler, vTextureCoord);
+            vec3 normal = normalize(vNormal);
+
+            vec3 surfaceToLightDirection = normalize(vSurfaceToLight);
+            vec3 surfaceToViewDirection = normalize(vSurfaceToView);
+            vec3 halfVector = normalize(surfaceToLightDirection + surfaceToViewDirection);
+
+
+            float dotFromDirection = dot(surfaceToLightDirection, -uLightDirection);
+
+            float inLight = smoothstep(uOuterLimit, uInnerLimit, dotFromDirection);
+            float light = inLight * dot(normal, surfaceToLightDirection) + 0.1;
+            float specular = inLight * pow(dot(normal, halfVector), uShininess);
+
+            vec4 outColor = texelColor;
+            outColor.rgb *= light;
+            outColor.rgb += specular;
+
+            gl_FragColor = outColor;
+        }
+    </script>
+
+
+    <script type="x-shader/x-vertex" id="vertex-shader-1">
+        attribute vec3 aVertexPosition;
+        attribute vec3 aVertexNormal;
+        attribute vec2 aTextureCoord;
+
+        uniform mat4 uNormalMatrix;
+        uniform mat4 uMVPMatrix;
+
+        uniform mat4 uModelMatrix;
+        uniform vec3 uLightWorldPosition;
+        uniform vec3 uCameraWorldPosition;
+        uniform float uShininess;
+        uniform vec3 uLightDirection;
+        uniform float uInnerLimit;
+        uniform float uOuterLimit;
+        uniform sampler2D uSampler;
+
+        varying vec2 vTextureCoord;
+        varying vec3 vNormal;
+        varying vec3 vVertexNormal;
+        varying vec3 vVertexPosition;
+        void main(){
+            gl_Position = uMVPMatrix * vec4(aVertexPosition, 1.0);
+            vTextureCoord = aTextureCoord;
+            vVertexNormal = aVertexNormal;
+            vVertexPosition = aVertexPosition;
+        }
+    </script>
+
+    <script type="x-shader/x-fragment" id="fragment-shader-1">
+        precision highp float;
+        uniform mat4 uNormalMatrix;
+        uniform mat4 uMVPMatrix;
+
+        uniform mat4 uModelMatrix;
+        uniform vec3 uLightWorldPosition;
+        uniform vec3 uCameraWorldPosition;
+        uniform float uShininess;
+        uniform vec3 uLightDirection;
+        uniform float uInnerLimit;
+        uniform float uOuterLimit;
+        uniform sampler2D uSampler;
+
+        varying vec2 vTextureCoord;
+        varying vec3 vNormal;
+        varying vec3 vVertexNormal;
+        varying vec3 vVertexPosition;
+        void main(){
+            highp vec4 texelColor = texture2D(uSampler, vTextureCoord);
+
+            vec3 normal = normalize(mat3(uNormalMatrix) * vVertexNormal);
+            vec3 surfaceWorldPosition = (uModelMatrix * vec4(vVertexPosition, 1.0)).xyz;
+            vec3 surfaceToLight = uLightWorldPosition - surfaceWorldPosition;
+            vec3 surfaceToView = uCameraWorldPosition - surfaceWorldPosition;
+
+            vec3 surfaceToLightDirection = normalize(surfaceToLight);
+            vec3 surfaceToViewDirection = normalize(surfaceToView);
+            vec3 halfVector = normalize(surfaceToLightDirection + surfaceToViewDirection);
+
+            float dotFromDirection = dot(surfaceToLightDirection, -uLightDirection);
+
+            float inLight = smoothstep(uOuterLimit, uInnerLimit, dotFromDirection);
+            float light = inLight * dot(normal, surfaceToLightDirection) + 0.1;
+            float specular = inLight * pow(dot(normal, halfVector), uShininess);
+
+            vec4 outColor = texelColor;
+            outColor.rgb *= light;
+            outColor.rgb += specular;
+
+            gl_FragColor = outColor;
+        }
+    </script>
+
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="webgl-obj-loader.js"></script>
+<div class="menu">
+    <canvas id="scene" style="border: none;" width="1450" height="725"></canvas>
+</div>
+<script src="sandbox/app.js" type="module"></script>
+</body>
+</html>
